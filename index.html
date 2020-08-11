@@ -5,24 +5,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Level 1</title>
+    <meta name="description" content="Fetch location wise data from hardcoded Js" />
+    <meta name="author" content="Neha Khandelwal" />
     <link rel="stylesheet" href="./assets/bootstrap-4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="./assets/bootstrap-4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    `
     <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Select City
-      </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown">
-            <a class="dropdown-item" href="#" value="Jaipur">Jaipur</a>
-            <a class="dropdown-item" href="#" value="Jodhpur">Jodhpur</a>
-            <a class="dropdown-item" href="#" value="Udaipur">Udaipur</a>
-        </div>
+      </button> -->
+        <select id="dropdown" onchange="locationData()">
+        <option value="Jaipur"> Jaipur </option>
+        <option value="Jodhpur"> Jodhpur </option>
+        <option value="Udaipur"> Udaipur </option>
+      </select>
+        <p id="renderPara"></p>
     </div>
     <script src=" assets/js/main.js "></script>
 </body>
