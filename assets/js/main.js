@@ -1,4 +1,6 @@
-var location = [{
+"use strict";
+
+var workers = [{
     username: "Neha",
     place: "Jaipur"
 }, {
@@ -18,8 +20,18 @@ var location = [{
     place: "Udaipur"
 }];
 
-
 function locationData() {
+    var i = 0;
+    var text = "";
     var locationSelected = document.getElementById('dropdown').value;
-    console.log(location.filter(locationSelected));
+    // alert(locationSelected);
+    let Availableworker = workers.filter(function(e) {
+        return e.place == locationSelected;
+    });
+
+    for (i = 0; i < Availableworker.length; i++) {
+        text += Availableworker[i].username + "<br>";
+    }
+
+    document.getElementById('resultPara').innerHTML = text;
 }

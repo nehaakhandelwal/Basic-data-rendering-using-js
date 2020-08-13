@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
-.dropdown {
+.dropdown,
+.result {
     margin: 10px;
 }
