@@ -1,8 +1,3 @@
-function locationData() {
-    var locationSelected = document.getElementById('dropdown').value;
-}
-
-
 var location = [{
     username: "Neha",
     place: "Jaipur"
@@ -22,3 +17,9 @@ var location = [{
     username: "Yash",
     place: "Udaipur"
 }];
+
+
+function locationData() {
+    var locationSelected = document.getElementById('dropdown').value;
+    console.log(location.filter(locationSelected));
+}
